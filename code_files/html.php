@@ -138,6 +138,7 @@ function htmlDrawOptionForReference($col, $selection, $obj=null, $required=false
       //BEGIN SII Correction bug
       $all_statuses = $table;
       $table = array($obj->idStatus=>$all_statuses[$obj->idStatus]);
+	  debugLog($obj->idStatus);
       reset($table);
       
       $fisrtKey=key($table);
